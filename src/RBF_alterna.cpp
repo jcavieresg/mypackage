@@ -1,12 +1,13 @@
 #include <RcppArmadillo.h>
 #include <iostream>
-// [[Rcpp::depends(RcppArmadillo)]]
+//#include <htool/include/htool/htool.hpp>
+
 
 
 
 
 using namespace arma;
-
+using namespace Rcpp;
 
 ////////////////////////////////////////////////////////////
 // [[Rcpp::export]]
@@ -570,15 +571,4 @@ Rcpp::List RBF_LSP2(arma::vec y, arma::mat dsites, arma::mat ctrs, int RBFtype, 
                             
   
 }
-
-
-
-
-
-
-
-
-
-
-
 
